@@ -8,8 +8,8 @@ var app = express();
 
 
 // TODO use couchdb or not?
-//var db = new(cradle.Connection)().database('countries');
-//console.log('db exists: ', db);
+var db = new(cradle.Connection)().database('countries');
+console.log('db exists: ', db);
 
 
 app.get('/countries', countries.findAllCountryCodes);
